@@ -30,7 +30,7 @@ IplImage* createbinary(IplImage *img)
 	IplImage* output = cvCreateImage(cvSize(wd,ht),IPL_DEPTH_8U,1);
 	for(i=0;i<ht;i++)
 		for(j=0;j<wd;j++)
-			PIX(output,i,j,0)=(uchar)(.33*PIX(img,i,j,0)+.56*PIX(img,i,j,1)+.11*PIX(img,i,j,2));
+			PIX(output,i,j,0)=(.33*PIX(img,i,j,0)+.56*PIX(img,i,j,1)+.11*PIX(img,i,j,2));
 
 	// now output is a greyscale image
 
