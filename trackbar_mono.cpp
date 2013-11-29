@@ -1,4 +1,3 @@
-// #include <stdio.h>
 #include "opencv2/opencv.hpp"
 
 #define PIX(img,i,j,k) (((uchar*)img->imageData)[i*img->widthStep+j*img->nChannels+k])
